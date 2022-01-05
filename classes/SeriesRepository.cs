@@ -9,7 +9,7 @@ namespace temp.series.classes
         private List<Series> listSeries = new List<Series>();
         void IRepository<Series>.Delete(int id)
         {
-            throw new System.NotImplementedException();
+            listSeries[id].excluir();
         }
 
         List<Series> IRepository<Series>.FindAll()
@@ -34,7 +34,7 @@ namespace temp.series.classes
 
         void IRepository<Series>.update(int id, Series entidade)
         {
-            throw new System.NotImplementedException();
+            listSeries[id] = entidade;
         }
     }
 }
