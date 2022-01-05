@@ -14,7 +14,7 @@ namespace temp.series.classes
 
         List<Series> IRepository<Series>.FindAll()
         {
-            throw new System.NotImplementedException();
+            return listSeries;
         }
 
         Series IRepository<Series>.findById(int id)
@@ -24,7 +24,7 @@ namespace temp.series.classes
 
         void IRepository<Series>.Insert(Series entidade)
         {
-            throw new System.NotImplementedException();
+            listSeries.Add(entidade);
         }
 
         int IRepository<Series>.NextId()
