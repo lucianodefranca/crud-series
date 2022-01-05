@@ -7,32 +7,32 @@ namespace temp.series.classes
     public class SeriesRepository : IRepository<Series>
     {
         private List<Series> listSeries = new List<Series>();
-        void IRepository<Series>.Delete(int id)
+        public void Delete(int id)
         {
             listSeries[id].excluir();
         }
 
-        List<Series> IRepository<Series>.FindAll()
+        public List<Series> FindAll()
         {
             return listSeries;
         }
 
-        Series IRepository<Series>.findById(int id)
+        public Series findById(int id)
         {
             return listSeries[id];
         }
 
-        void IRepository<Series>.Insert(Series entidade)
+        public void Insert(Series entidade)
         {
             listSeries.Add(entidade);
         }
 
-        int IRepository<Series>.NextId()
+        public int NextId()
         {
             return listSeries.Count;
         }
 
-        void IRepository<Series>.update(int id, Series entidade)
+        public void update(int id, Series entidade)
         {
             listSeries[id] = entidade;
         }
