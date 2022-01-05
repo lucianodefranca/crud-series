@@ -19,7 +19,7 @@ namespace temp.series.classes
 
         Series IRepository<Series>.findById(int id)
         {
-            throw new System.NotImplementedException();
+            return listSeries[id];
         }
 
         void IRepository<Series>.Insert(Series entidade)
@@ -29,7 +29,7 @@ namespace temp.series.classes
 
         int IRepository<Series>.NextId()
         {
-            throw new System.NotImplementedException();
+            return listSeries.Count;
         }
 
         void IRepository<Series>.update(int id, Series entidade)
