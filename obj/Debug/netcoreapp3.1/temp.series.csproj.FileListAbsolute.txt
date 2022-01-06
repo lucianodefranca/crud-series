@@ -1,0 +1,13 @@
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.csprojAssemblyReference.cache
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.AssemblyInfoInputs.cache
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.AssemblyInfo.cs
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.csproj.CoreCompileInputs.cache
+C:\temp\Bootcamp Decola Tech\temp\temp.series\bin\Debug\netcoreapp3.1\temp.series.exe
+C:\temp\Bootcamp Decola Tech\temp\temp.series\bin\Debug\netcoreapp3.1\temp.series.deps.json
+C:\temp\Bootcamp Decola Tech\temp\temp.series\bin\Debug\netcoreapp3.1\temp.series.runtimeconfig.json
+C:\temp\Bootcamp Decola Tech\temp\temp.series\bin\Debug\netcoreapp3.1\temp.series.runtimeconfig.dev.json
+C:\temp\Bootcamp Decola Tech\temp\temp.series\bin\Debug\netcoreapp3.1\temp.series.dll
+C:\temp\Bootcamp Decola Tech\temp\temp.series\bin\Debug\netcoreapp3.1\temp.series.pdb
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.dll
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.pdb
+C:\temp\Bootcamp Decola Tech\temp\temp.series\obj\Debug\netcoreapp3.1\temp.series.genruntimeconfig.cache
