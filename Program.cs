@@ -21,7 +21,7 @@ namespace temp.series
                         InserirSeries();
                         break;
                     case "3":
-                        //AtualizarSeries();
+                        AtualizarSeries();
                         break;
                     case "4":
                         //ExcluirSeries();
@@ -88,6 +88,36 @@ namespace temp.series
                                           ano: entradaAno,
                                           descricao: entradaDescricao);
             repository.Insert(novaSerie);
+        }
+
+        private static void AtualizarSeries() 
+        {   
+            Console.WriteLine("Digite o ID da série: ");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            foreach (int i in Enum.GetValues(typeof(Genero)))
+            {
+                 Console.WriteLine("{0}-{1}", 1, Enum.GetName(typeof(Genero), i));
+            }
+
+            Console.WriteLine("Digite o genero entre as opções acima: ");
+            int entradaGenero = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o titulo da série: ");
+            string entradaTitulo = Console.ReadLine();
+
+            Console.WriteLine("Digite o ano de inicio da série: ");
+            int entradaAno = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a descrição da série: ");
+            string entradaDescricao = Console.ReadLine();
+
+            Series atualizaSerie = new Series(id: indiceSerie,
+                                          genero: (Genero)entradaGenero,
+                                          titulo: entradaTitulo,
+                                          ano: entradaAno,
+                                          descricao: entradaDescricao);
+            repository.update(indiceSerie, atualizaSerie);
         }
 
         private static string ObterOpcaoUsuario() 
