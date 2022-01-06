@@ -24,10 +24,10 @@ namespace temp.series
                         AtualizarSeries();
                         break;
                     case "4":
-                        //ExcluirSeries();
+                        ExcluirSeries();
                         break;
                     case "5":
-                        //VisualizarSeries();
+                        VisualizarSeries();
                         break;
                     case "C":
                         Console.Clear();
@@ -58,7 +58,8 @@ namespace temp.series
 
             foreach (var serie in lista)
             {
-                Console.WriteLine("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo());
+                var excluido = serie.retornaExcluido();
+                Console.WriteLine("#ID {0}: - {1} {2}", serie.retornaId(), serie.retornaTitulo(), (excluido ? "*Excluido*" : ""));
             }
         }
 
@@ -118,6 +119,24 @@ namespace temp.series
                                           ano: entradaAno,
                                           descricao: entradaDescricao);
             repository.update(indiceSerie, atualizaSerie);
+        }
+
+        private static void ExcluirSeries()
+        {
+            Console.WriteLine("Digite o ID da série: ");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            repository.Delete(indiceSerie);
+        }
+
+        private static void VisualizarSeries()
+        {
+            Console.WriteLine("Digite o ID da série: ");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            var serie = repository.findById(indiceSerie);
+
+            Console.WriteLine(serie);
         }
 
         private static string ObterOpcaoUsuario() 

@@ -31,11 +31,11 @@ namespace temp.series
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Genero" + this.Genero + Environment.NewLine;
-            retorno += "Titulo" + this.Titulo + Environment.NewLine;
-            retorno += "Descrição" + this.Descricao + Environment.NewLine;
-            retorno += "Ano de lançamento" + this.Ano + Environment.NewLine;
-            retorno += "Excluido" + this.Excluido;
+            retorno += "Genero " + this.Genero + Environment.NewLine;
+            retorno += "Titulo " + this.Titulo + Environment.NewLine;
+            retorno += "Descrição " + this.Descricao + Environment.NewLine;
+            retorno += "Ano de lançamento " + this.Ano + Environment.NewLine;
+            retorno += "Excluido " + this.Excluido;
             return retorno;
         }
 
@@ -52,6 +52,11 @@ namespace temp.series
         public void excluir() 
         {
             this.Excluido = true;
+        }
+
+        public bool retornaExcluido() 
+        {
+            return this.Excluido;
         }
     }
 }
